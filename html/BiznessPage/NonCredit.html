@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/BiznessPage/NonCredit.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-expand-sm">
+            <div class="container">
+                <div class="navbar-nav">
+                    <a href="/html/home.html"><img src="/img/logonew-orange.png" alt="logo" class="img-logo"></a>
+                    <div class="nav-item ms-5">
+                        <a class="nav-link " href="/html/ServiceNet.html">Xidmət şəbəkəsi</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/AboutBank.html">Bank haqqında</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/Cashback.html">Keşbek</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/rate.html">Tariflər</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/HumanResources.html">İnsan Resursları</a>
+                    </div>
+                    <div class="nav-item me-5">
+                        <a class="nav-link" href="/html/ContactBank.html">Bankla əlaqə və təkliflər</a>
+                    </div>
+                    <a href="/html/Individual.html" id="button-ferdi">
+                        <button type="button" class="btn button-1 bc2 cl">Fərdi</button>
+                    </a>
+                    <a href="/html/BiznessPage/Bizness.html">
+                        <button type="button" class="btn button-2 bc2 cl" id="button-ferdi">Biznes</button>
+                    </a>
+                    <button type="button" class="btn button-3 mx-2" id="night-theme">
+                        <i class="bi bi-brightness-high"></i>
+                    </button>
+                    <button type="button" class="btn button-4 mx-2 bc2 cl">ENG</button>
+                    <button type="button" class="btn button-5 mx-2 bc2 cl">RUS</button>
+                    <button type="button" class="btn button-6 bc2 cl" data-bs-target="#myModal" data-bs-toggle="modal">
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Axtarış</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form>
+                                        <input type="text" class="form-control form-control-lg" id="modal-form">
+                                    </form>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-expand-sm">
+            <div class="container">
+                <div class="navbar-nav mt-3">
+
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/BiznessPage/CreditProd.html" id="nav-link"><b>Kredit
+                                məhsulları</b> </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mx-3" href="/html/BiznessPage/NonCredit.html" id="nav-link"><b>Qeyri – kredit
+                                məhsulları</b> </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mx-3" href="/html/BiznessPage/DigitalBanking.html" id="nav-link"><b>Rəqəmsal
+                                bankçılıq</b></a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mx-3" href="/html/BiznessPage/DocTrans.html" id="nav-link"> <b>Sənədli
+                                əməliyyatlar</b></a>
+                    </div>
+                    <button type="button" class="btn mx-2 fw-bolder button-phone cl">
+                        <i class="bi bi-person-fill me-2"></i>Müştəri ol
+                    </button>
+                    <button type="button" class="btn mx-2 fw-bolder button-banking cl" onclick="myFunction()">
+                        <i class="bi bi-arrow-right-circle-fill fs-5 me-3"></i>İnternet bankçılıq
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row mt-5">
+
+                <header class="header-text">
+                    <h2>
+                        Qeyri – kredit məhsulları
+                    </h2>
+                </header>
+                <div class="card mt-5 bc">
+                    <div class="card-body ">
+                        <h4 class="card-title mt-5 mb-4">Kassa-hesablaşma xidməti </h4>
+                        <p class="card-text ms-5 me-3">
+
+                            Müəssisəsinizin səmərəli fəaliyyətinin təmin olunmasına, təchizatçı və alıcılarla
+                            vaxtı-vaxtında hesablaşma aparılmasına, nağdsız pul vəsaitlərinin operativ idarə olunması və
+                            nağd pul vəsaitlərinin təhlükəsiz idarə edilməsinə yardım edəcək.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 mx-5 bc">
+                    <div class="card-body ">
+                        <h4 class="card-title mt-5 mb-4">Ekvayrinq xidmətləri </h4>
+                        <p class="card-text ms-5 me-3">
+
+                            Nağdsız ödənişlərə üstünlük verən müştərilər, Unibank POS- terminalları vasitəsilə istənilən
+                            ölkənin beynəlxalq plastik kartları ilə olan ödənişləri qəbul edə biləcək.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 bc">
+                    <div class="card-body ">
+                        <h4 class="card-title mt-5 mb-4">Əməkhaqqı layihələri </h4>
+                        <p class="card-text ms-5 me-3">
+
+                            Biznes böyüyür və genişlənir, əməkdaşların sayı sürətlə artır, əməkhaqqının verilməsi isə
+                            get-gedə daha çox vaxt və resurs tələb edir. Ödəniş sisteminin bank kartlarının köməyi ilə
+                            əməkdaşlara əməkhaqqının avtomatlaşdırılmış qaydada paylanmasını təmin edirik.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 bc">
+                    <div class="card-body ">
+                        <h4 class="card-title mt-5 mb-4 mb-4">Əmanətlər </h4>
+                        <p class="card-text ms-5 me-3">
+
+                            Sərbəst vəsaitlərin çevik yerləşdirilməsi sxemini təklif edir. Siz, həm manatla, həm də
+                            xarici valyutada rəqabət qabiliyyətli və cari bazar şərtlərinə müvafiq faiz dərəcələrini ilə
+                            yerləşdirə bilərsiniz.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 mx-5 bc">
+                    <div class="card-body ">
+                        <h4 class="card-title mt-5 mb-4">İnkassasiya xidmətləri </h4>
+                        <p class="card-text ms-5 me-3 ">
+
+                            İnkasassiya - nağd pul və qiymətli əşyaların təhlükəsiz daşınmasını təmin edən xidmətdir.
+                            Nağd pula ehtiyac yaranırsa, onun daşınması ilə bağlı problemləri öz üzərimizə götürməyə və
+                            Sizə öz inkassasiya xidmətimizi təklif etməyə hazırıq.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 bc">
+                    <div class="card-body ">
+                        <h4 class="card-title mt-5 mb-4">Korporativ kartlar </h4>
+                        <p class="card-text ms-5 me-3">
+
+                            Biznes kartlar şirkətin məsrəflərinin səmərəli və rahat idarə olunması, təsərrüfat
+                            fəaliyyəti ilə bağlı hesablaşmaların aparılması və ezamiyyət xərclərinin, təsərrüfat
+                            məsrəflərini, nümayəndəlik xərclərini ödəməyə imkan verir.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 mb-3 mb-5 bc">
+                    <div class="card-body">
+                        <h4 class="card-title mt-5 mb-4">Albalı Biznes Layihəsi </h4>
+                        <p class="card-text ms-5">
+
+                            Mağazalarla distributor şirkətlər arasında ticarətin daha rahat və təhlükəsiz aparılmasına,
+                            operativliyin təmin olunmasına, dövriyyənin artırılmasına imkan yaradan, debet və kredit
+                            funksiyalarını özündə birləşdirən çox sərfəli bank kartıdır.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <section class="position-relative">
+                    <div class="position-absolute mt-5 ms-5">
+                        <div>
+                            <a href="#" class="footer-container"><b>Kartlar</b></a>
+                        </div>
+
+                        <div class="my-3">
+                            <a href="#" class="footer-container">Kartlar</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container">Debet kartlar</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container">Digər</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-2"><b>Kreditlər</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-2">Nağd</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-2">Mikro</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-2">İpoteka</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-3"><b>Əmanətlər</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-3">Müddətli</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-3">Proqressiv</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-3">Yığım</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-3">Faizlər əvvəlcədən</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-3">Topla</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-4"><b>Köçürmələr</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-4">Ölkəxarici</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-4">Ölkədaxili</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-5"><b>Rəqəmsal bankçılıq</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-5">UBank</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">İnternet bankçılıq</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">Şəxsi kabinet</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">Unimiles şəxsi kabinet</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">Onlayn kredit ödənişi</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-5">Onlayn kredit müraciəti</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-6"><b>Əlavə xidmətlər</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-6">Hesablaşma-kassa xidməti</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-6">POS terminal / Smart kassa</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-6">Depozit qutuları</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-6">Onlayn ticarət (eCommerce)</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-7"><b>Bank haqqında</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-7">Rəhbərlik</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">Müxbir hesablar</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">Təklif və Şikayətlər</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">İnsan resursları</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">Hesabatlar</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-7">Digər sənədlər</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="social-icone ms-5 ">
+                    <a href="#" class="aqz"><i class="bi bi-apple icone1 "></i></a>
+                    <a href="#"><i class="bi bi-android2 icone2 mx-2"></i></a>
+                    <a href="#"><i class="bi bi-facebook icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-twitter icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-linkedin icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-youtube icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-instagram icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-telegram icone"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="position-relative">
+                    <div class="d-inline-flex">
+                        <p class="d-inline-flex">© 2022, Unibank - Sənin Bankın</p>
+                    </div><br>
+                    <div class="d-inline-flex">
+                        <small class="d-inline-flex"> Bütün hüquqlar qorunur.</small>
+                    </div>
+                    <div class="footer-partners position-absolute">
+                        <a href="#"><img src="/img/adif.png" alt="adif" id="adif"></a>
+                        <a class="mx-4" href="#"><img src="/img/infobank.png" alt="adif" id="adif"></a>
+                        <a href="#"><img src="/img/msp.png" alt="adif" id="adif"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

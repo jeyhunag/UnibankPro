@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/AboutBank.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-expand-sm">
+            <div class="container " >
+                <div class="navbar-nav">
+                    <a href="/html/home.html"><img src="/img/logonew-orange.png" alt="logo" class="img-logo"></a>
+                    <div class="nav-item ms-5">
+                        <a class="nav-link " href="/html/ServiceNet.html">Xidmət şəbəkəsi</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/AboutBank.html">Bank haqqında</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/Cashback.html">Keşbek</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/rate.html">Tariflər</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/HumanResources.html">İnsan Resursları</a>
+                    </div>
+                    <div class="nav-item me-5">
+                        <a class="nav-link" href="/html/ContactBank.html">Bankla əlaqə və təkliflər</a>
+                    </div>
+                    <a href="/html/Individual.html" id="button-ferdi">
+                        <button class="btn button-1 bc2 cl">Fərdi</button>
+                    </a>
+                    <a href="/html/BiznessPage/Bizness.html">
+                        <button type="button" class="btn button-2 bc2 cl" id="button-ferdi">Biznes</button>
+                    </a>
+                    <button type="button" class="btn button-3 mx-2 " id="night-theme">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                    <button type="button" class="btn button-4 mx-2 bc2 cl">ENG</button>
+                    <button type="button" class="btn button-5 mx-2 bc2 cl" >RUS</button>
+                    <button type="button" class="btn button-6 bc2 cl bc2" data-bs-target="#myModal" data-bs-toggle="modal">
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Axtarış</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form>
+                                        <input type="text" class="form-control form-control-lg" id="modal-form">
+                                    </form>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm" id="nigh-textcolor">
+            <div class="container">
+                <div class="navbar-nav mt-3">
+
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/Cards.html" id="nav-link"><b>Kartlar</b> </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mx-3" href="/html/Loans.html " id="nav-link"><b>Kreditlər</b> </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mx-3" href="/html/Deposits.html" id="nav-link"><b>Əmanətlər</b></a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mx-3" href="/html/Transfers.html" id="nav-link"> <b>Köçürmələr</b></a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mx-3" href="/html/Digitalbank.html" id="nav-link"><b>Rəqəmsal
+                                bankçılıq</b></a>
+                    </div>
+                    <div class="nav-item me-5">
+                        <a class="nav-link" href="/html/AdditionalServ.html" id="nav-link"><b>Əlavə xidmətlər</b></a>
+                    </div>
+                    <button type="button" class="btn mx-2 fw-bolder button-phone cl">
+                        <i class="bi bi-telephone-fill me-1"></i>117
+                    </button>
+                    <button type="button" class="btn mx-2 fw-bolder button-banking cl" onclick="myFunction()">
+                        <i class="bi bi-arrow-right-circle-fill fs-5 me-3"></i>İnternet bankçılıq
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="mt-5">
+                    <p class="h2 fw-bolder" id="About-bank">Bank haqqında</p>
+                </div>
+                <div>
+                    <p>
+                        Unibank – Azərbaycanın 1992-ci ilin iyul ayında, ilkin olaraq MBank adı altında, təsis edilmiş
+                        ən iri özəl banklarından biridir. MBank ilə Azərbaycanın aparıcı banklarından biri olan
+                        PROMTEXBANK-ın birləşməsindən sonra, onun adı 2002-ci ilin oktyabr ayının 15-də Unibank-a
+                        dəyişdirilmişdir.
+                    </p>
+                </div>
+                <div class="mt-2">
+                    <p>
+                        Müştəri yönümlü bank olaraq biz, müxtəlif regionlarda müştərilərin tələbatını nəzərə alırıq və
+                        qlobal xarakter daşıyan, eyni zamanda lokal bazarlar üçün adaptasiya olunmuş məhsullar və
+                        xidmətlər təqdim edirik. Bu zaman biz yüksək etik standartlara və sosial məsuliyyət prinsipinə
+                        ciddi riayət edirik. Təsadüfi deyil ki, bugün Unibank maliyyə bazarında layiqli nüfuz əldə
+                        etmişidir.
+                    </p>
+                </div>
+                <div class="mt-3">
+                    <b>Bankın strateji hədəfləri:</b>
+                    <p>
+                        — Bazarda “Ən yaxşı Rəqəmsal/İnnovativ Bank” olmaq. <br>
+                        — Müştərilərin məmnunluq səviyyəsini yüksəltmək.<br>
+                        — Özünə yeni bazar mövqeləri (pərakəndə və korporativ sektorlarda) təmin etmək və ümumi bazar
+                        payını artırmaq.<br>
+                        — Pərakəndə və biznes kredit portfellərini inkişaf etdirmək.<br>
+                        — Qeyri-işlək kreditlər məsələsinin səmərəli həllini təmin etmək.<br>
+                        — Biznes proseslərin möhkəm və səmərəli idarə edilməsi sistemini qurmaq.<br>
+                        — Hər bir səviyyədə risklərin idarə edilməsi hüdudlarını genişləndirmək.<br>
+                        — İnsan kapitalının inkişafını və korporativ inkişafı vurğulamaq, hər iki sahəni inkişaf
+                        etdirmək.<br>
+                    </p>
+                </div>
+                <div class="mt-3">
+                    <p>
+                        2021-ci ildə Unibank Azərbaycanda ilk dəfə olaraq «mobile-only» (filialsız bank) prinsipinə
+                        uyğun olaraq Leobank-ı yaratdı. Leo müştəriləri kredit limiti olan əlverişli Visa kartından
+                        istifadə etmək, ödəmə və köçürmələri həyata keçirmək, Cashback almaq və daha çox üstünlüklərdən
+                        yararlanmaq imkanına malikdirlər.
+                    </p>
+                </div>
+                <div>
+                    <p class="fw-lighter">
+                        Yenilənmə tarixi - 15.05.2019
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mission bc">
+                    <div>
+                        <i class="bi bi-vinyl-fill"></i>
+                    </div>
+                    <div>
+                        <p class="mission-text">
+                            Missiyamız, ölkənin ən innovativ məhsul və xidmətlər tətbiq edən bankı olmaqla, müştərilərə
+                            mükəmməl bank xidmətləri göstərmək, <br>
+                            səhmdarlarımızın dəyərinə dəyər qatmaq, əməkdaşlarımızın və ölkəmizin inkişafı istiqamətində
+                            çalışmaqdır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" row">
+                <div class="card mt-5 bc">
+                    <div >
+                      <a href="#"><i class="bi bi-person-fill" id="cardicon"></i></a>
+                    </div>
+                   
+                    <div class="card-body ">
+                        <h4 class="card-title">Rəhbərlik</h4>
+                        <p class="card-text ms-5">
+                            Müşahidə Şurası, İdarə Heyəti və <br> komitələr haqqında informasiya
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 mx-5 bc">
+                    <a href="#"><i class="bi bi-file-text"  id="cardicon"></i></a>
+                    <div class="card-body ">
+                        <h4 class="card-title">Müxbir hesablar</h4>
+                        <p class="card-text ms-5">
+                            Müxbir hesablar haqqında məlumat
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 bc">
+                    <a href=""><i class="bi bi-envelope-exclamation"  id="cardicon"></i></a>
+                    <div class="card-body ">
+                        <h4 class="card-title">Təklif və Şikayətlər</h4>
+                        <p class="card-text ms-5">
+
+                            Müraciətlərin baxılması və <br>
+                            cavablandırılması üzrə daxili qaydaların <br>
+                            qısa icmalı
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 bc">
+                    <a href=""><i class="bi bi-file-earmark-person"  id="cardicon"></i></a>
+                    <div class="card-body ">
+                        <h4 class="card-title">İnsan resursları</h4>
+                        <p class="card-text ms-5">
+                            Mövcud vakansiyalar və peşəkar <br>
+                            komanda haqqında informasiya
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 mx-5 bc">
+                    <a href=""><i class="bi bi-files"  id="cardicon"></i></a>
+                    <div class="card-body ">
+                        <h4 class="card-title">Hesabatlar</h4>
+                        <p class="card-text ms-5">
+                            İllik və rüblük hesabatlar, təqdimatlar, <br>
+                            auditor rəyi və digər hesabatlar
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 bc">
+                    <a href=""><i class="bi bi-folder"  id="cardicon"></i></a>
+                    <div class="card-body ">
+                        <h4 class="card-title">
+                            Digər sənədlər
+                        </h4>
+                        <p class="card-text ms-5">
+                            Səhmdar kapitalı, insayder əqdləri, və <br>
+                            investisiya qiymətli kağızlar haqqında <br>
+                            məlumat
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <section class="Licenses">
+                    <div class="mt-5 ">
+                        <h2 id="Licenses" class="fw-bolder">Lisenziyalar</h2>
+                    </div>
+                    <div class="mt-3">
+                        <p>
+                            “Unibank” Kommersiya Bankı” Açıq Səhmdar Cəmiyyəti Azərbaycan Respublikasının Mərkəzi Bankı
+                            tərəfindən verilmiş 14 dekabr 2010-cu il tarixli 73 saylı lisenziyaya əsasən “Banklar
+                            haqqında” Qanunun 32-ci maddəsində nəzərdə tutulmuş fəaliyyət növlərini həyata keçirə bilər.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="mt-4">
+                            “Unibank” Kommersiya Bankı” Açıq Səhmdar Cəmiyyətinə 29 dekabr 2009-cu il tarixində Maliyyə
+                            Nazirliyi tərəfindən sığorta agenti fəaliyyəti üzrə 000301 saylı lisenziya verilmişdir.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="mt-5">
+                            “Unibank” Kommersiya Bankı” Açıq Səhmdar Cəmiyyəti 30 iyul 2007-ci il tarixində 21 saylı
+                            qeydiyyat nömrəsi ilə Əmanətlərin Sığortalanması Fondunun iştirakçı banklarının reyestrinə
+                            daxil edilmişdir.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="Contact-coordinates">
+                    <div class="Contact-text mt-5 ">
+                        <h2 class="fw-bolder">Əlaqə koordinatları</h2>
+                    </div>
+                    <div class="mt-4">
+                        <b>Hüquqi ünvan:</b>
+                        <p>
+                            Azərbaycan Respublikası, Bakı şəh., AZ1014, R.Behbudov küç., 55, məhəllə 384
+                        </p>
+                    </div>
+                    <div>
+                        <p class="mt-4">
+                            Tel.: (99412) 117 <br>
+                            Tel.: (99412) 498 22 44 <br>
+                            Faks: (99412) 498 09 53
+                        </p>
+                    </div>
+                    <div>
+                        <p class="mt-4">
+                            E-mail: bank@unibank.az <br>
+                            Web: www.unibank.az
+                        </p>
+                    </div>
+                    <div>
+                        <p class="mt-4">
+                            S.W.I.F.T. UBAZAZ22 <br>
+                            VÖEN 1300017201
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <b>Kənar auditor haqda məlumat:</b>
+                        <p>
+                            "KPMG Azerbaijan" <br>
+                            Neftçilər pr. 153, "Port Baku" Cənubi qüllə, 12-ci mərtəbə <br>
+                            T: +994 (12) 4048910 | F: +994 (12) 4048914
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <b>Beynəlxalq münasibətlər şöbəsi:</b>
+                        <p>
+                            i.relations@unibank.az
+                        </p>
+                    </div>
+                </section>
+
+                <section class="Brief-information mt-5">
+                    <div>
+                        <h2 class="Brief fw-bolder">
+                            Qısa məlumat
+                        </h2>
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            “Unibank” Kommersiya Bankı” Açıq Səhmdar Cəmiyyəti 2007-ci il tarixində “bir pəncərə”
+                            prinsipi ilə Vergilər Nazirliyində dövlət qeydiyyatına alınmışdır.
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <b>Tam adı:</b>
+                        <p>
+                            “UNİBANK” Kommersiya Bankı” Açıq Səhmdar Cəmiyyəti
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <b>Qısa:</b>
+                        <p>
+                            Unibank KB
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <b>Təşkilati-hüquqi forması:</b>
+                        <p>
+                            Kommersiya Bankı Açıq Səhmdar Cəmiyyəti
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <b>Qeydiyyat tarixi</b>
+                        <p>
+                            27 iyul 1992-ci il.
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <b>Ticarət nişanı:</b>
+                        <p>
+                            23.09.2008-ci il tarixində Azərbaycan Respublikası Dövlət Standartlaşdırma, Metrologiya və
+                            Patent üzrə Dövlət Agentliyinin dövlət reyestrində “Unibank” əmtəə nişanı yeni dizaynlı
+                            ticarət nişanı kimi qeydiyyata almışdır və bununla bağlı eyni tarixdə 2008 1142 saylı
+                            Şəhadətnamə vermişdir.
+
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <b>Törəmə şirkətlər: </b>
+                        <p>
+                            Unicapital
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="mt-5">
+                    <h2 class="Awards fw-bolder">
+                        Mükafatlar
+                    </h2>
+                </div>
+                <section class="TheBanker mb-5">
+                    <div class=" mt-3">
+                        <img src="/img/o_1c0r2kgpp1i7mpl61vk0kce4eqa.jpg" alt="banker">
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            Azərbaycanda Ən Tez İnkişaf Edən <br>
+                            Bank 2004-cü il
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            Azərbaycanda İlin Bankı - 2005-ci il
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            Azərbaycanda İlin Bankı - 2008-ci il
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            Azərbaycanda İlin Bankı - 2014-cü il
+                        </p>
+                    </div>
+                </section>
+
+                <section class="TheBanker mx-4">
+                    <div class=" mt-3">
+                        <img src="/img/o_1c0r2lqbe1j6g19k57201or1jpja.jpg" alt="banker">
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            AYİB-ın Azərbaycanda Ticarətin İnkişafı <br>
+                            Proqramlarına Dəstək Verən Ən Fəal <br>
+                            Bank -2003-cü il
+                        </p>
+                    </div>
+                </section>
+                <section class="TheBanker">
+                    <div class=" mt-3">
+                        <img src="/img/o_1c17aar3s36a16sh1m3thtcvkta.png" alt="banker">
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            Azərbaycanın Ən Yaxşı Bankı - 2005-ci il
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            Azərbaycanın Ən Yaxşı Bankı - 2007-ci il
+                        </p>
+                    </div>
+                </section>
+
+                <section class="TheBanker ms-3">
+                    <div class=" mt-3">
+                        <img src="/img/o_1c17ao48r1ekc1tt3ru215jpamaa.png" alt="banker">
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            İlin Sazişi /2008 il (“Deutsche Bank”dan cəlb edilən sindikatlaşdırılmış kredit xətti)
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <section class="position-relative">
+                    <div class="position-absolute mt-5 ms-5">
+                        <div>
+                            <a href="#" class="footer-container"><b>Kartlar</b></a>
+                        </div>
+
+                        <div class="my-3">
+                            <a href="#" class="footer-container">Kartlar</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container">Debet kartlar</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container">Digər</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-2"><b>Kreditlər</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-2">Nağd</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-2">Mikro</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-2">İpoteka</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-3"><b>Əmanətlər</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-3">Müddətli</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-3">Proqressiv</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-3">Yığım</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-3">Faizlər əvvəlcədən</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-3">Topla</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-4"><b>Köçürmələr</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-4">Ölkəxarici</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-4">Ölkədaxili</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-5"><b>Rəqəmsal bankçılıq</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-5">UBank</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">İnternet bankçılıq</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">Şəxsi kabinet</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">Unimiles şəxsi kabinet</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">Onlayn kredit ödənişi</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-5">Onlayn kredit müraciəti</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-6"><b>Əlavə xidmətlər</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-6">Hesablaşma-kassa xidməti</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-6">POS terminal / Smart kassa</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-6">Depozit qutuları</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-6">Onlayn ticarət (eCommerce)</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-7"><b>Bank haqqında</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-7">Rəhbərlik</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">Müxbir hesablar</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">Təklif və Şikayətlər</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">İnsan resursları</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">Hesabatlar</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-7">Digər sənədlər</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="social-icone ms-5 ">
+                    <a href="#" class="aqz"><i class="bi bi-apple icone1 "></i></a>
+                    <a href="#"><i class="bi bi-android2 icone2 mx-2"></i></a>
+                    <a href="#"><i class="bi bi-facebook icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-twitter icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-linkedin icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-youtube icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-instagram icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-telegram icone"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="position-relative">
+                    <div class="d-inline-flex">
+                        <p class="d-inline-flex">© 2022, Unibank - Sənin Bankın</p>
+                    </div><br>
+                    <div class="d-inline-flex">
+                        <small class="d-inline-flex"> Bütün hüquqlar qorunur.</small>
+                    </div>
+                    <div class="footer-partners position-absolute">
+                        <a href="#"><img src="/img/adif.png" alt="adif" id="adif"></a>
+                        <a class="mx-4" href="#"><img src="/img/infobank.png" alt="adif" id="adif"></a>
+                        <a href="#"><img src="/img/msp.png" alt="adif" id="adif"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

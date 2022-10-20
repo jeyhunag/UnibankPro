@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/Cashback.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-expand-sm">
+            <div class="container " >
+                <div class="navbar-nav">
+                    <a href="/html/home.html"><img src="/img/logonew-orange.png" alt="logo" class="img-logo"></a>
+                    <div class="nav-item ms-5">
+                        <a class="nav-link " href="/html/ServiceNet.html">Xidmət şəbəkəsi</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/AboutBank.html">Bank haqqında</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/Cashback.html">Keşbek</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/rate.html">Tariflər</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/HumanResources.html">İnsan Resursları</a>
+                    </div>
+                    <div class="nav-item me-5">
+                        <a class="nav-link" href="/html/ContactBank.html">Bankla əlaqə və təkliflər</a>
+                    </div>
+                    <a href="/html/Individual.html" id="button-ferdi">
+                        <button class="btn button-1 bc2 cl">Fərdi</button>
+                    </a>
+                    <a href="/html/BiznessPage/Bizness.html">
+                        <button type="button" class="btn button-2 bc2 cl" id="button-ferdi">Biznes</button>
+                    </a>
+                    <button type="button" class="btn button-3 mx-2 " id="night-theme">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                    <button type="button" class="btn button-4 mx-2 bc2 cl">ENG</button>
+                    <button type="button" class="btn button-5 mx-2 bc2 cl" >RUS</button>
+                    <button type="button" class="btn button-6 bc2 cl bc2" data-bs-target="#myModal" data-bs-toggle="modal">
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Axtarış</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form>
+                                        <input type="text" class="form-control form-control-lg" id="modal-form">
+                                    </form>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm" id="nigh-textcolor">
+            <div class="container">
+                <div class="navbar-nav mt-3">
+
+                    <div class="nav-item">
+                        <a class="nav-link" href="/html/Cards.html" id="nav-link"><b>Kartlar</b> </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mx-3" href="/html/Loans.html " id="nav-link"><b>Kreditlər</b> </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mx-3" href="/html/Deposits.html" id="nav-link"><b>Əmanətlər</b></a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mx-3" href="/html/Transfers.html" id="nav-link"> <b>Köçürmələr</b></a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mx-3" href="/html/Digitalbank.html" id="nav-link"><b>Rəqəmsal
+                                bankçılıq</b></a>
+                    </div>
+                    <div class="nav-item me-5">
+                        <a class="nav-link" href="/html/AdditionalServ.html" id="nav-link"><b>Əlavə xidmətlər</b></a>
+                    </div>
+                    <button type="button" class="btn mx-2 fw-bolder button-phone cl">
+                        <i class="bi bi-telephone-fill me-1"></i>117
+                    </button>
+                    <button type="button" class="btn mx-2 fw-bolder button-banking cl" onclick="myFunction()">
+                        <i class="bi bi-arrow-right-circle-fill fs-5 me-3"></i>İnternet bankçılıq
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="mt-5">
+                        <h2 class="casback fw-bolder">Keşbek və Miles</h2>
+                    </div>
+                    <div class="mt-2">
+                        <p>
+                            Kart ilə ödədiyin məbləğin 30%-dək hissəsi keşbek və ya miles kimi geri qayıdır.
+                        </p>
+                    </div>
+
+                    <div class="mt-4">
+                        <p>
+                            Unibank kartlarında keşbek xidməti və işləməsi qaydası ilə aşağıda daha ətraflı qeyd olunub.
+                        </p>
+                    </div>
+
+                    <div class="mt-4">
+                        <p>
+                            UniMiles, Mastercard Black Edition miles, Mastercard World Elite miles və Visa Infinite
+                            miles kartlarında isə hər ödənişdən millər hesablanaraq geri qayıdır.
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            Millərin hesablanması və işləmə metodu haqqında daha ətraflı məlumatı UniMiles səhifəsindən
+                            əldə etmək olar.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="Category col-md-3 mt-5 bc">
+                        <div class="position-absolute">
+                            <form class="mt-3 ms-5 ">
+                                <label for="sel1" class="form-label ms-5 ">Kategoriyanı seçin</label>
+                                <select class="form-select bc2" id="sel1" name="sellist1">
+                                    <option>- Bütün -</option>
+                                    <option>Aksessuarlar</option>
+                                    <option>Avto</option>
+                                    <option>Ayaqqabı mağazaları</option>
+                                    <option>Ayaqqabı mağazaları</option>
+                                    <option>Digər</option>
+                                    <option>Gül salonları</option>
+                                    <option>İstirahət və Əyləncə</option>
+                                    <option>Kosmetika</option>
+                                    <option>Mebel</option>
+                                    <option>Parfümeriya</option>
+                                    <option>Restoran</option>
+                                    <option>Supermarketlər</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="position-absolute Partnyor">
+                            <form class="mt-3 ms-5">
+                                <label for="sel1" class="form-label ms-5">Kategoriyanı seçin</label>
+                                <select class="form-select bc2" id="sel1" name="sellist1">
+                                    <option>- Bütün -</option>
+                                    <option>Aksessuarlar</option>
+                                    <option>Avto</option>
+                                    <option>Ayaqqabı mağazaları</option>
+                                    <option>Ayaqqabı mağazaları</option>
+                                    <option>Digər</option>
+                                    <option>Gül salonları</option>
+                                    <option>İstirahət və Əyləncə</option>
+                                    <option>Kosmetika</option>
+                                    <option>Mebel</option>
+                                    <option>Parfümeriya</option>
+                                    <option>Restoran</option>
+                                    <option>Supermarketlər</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="position-absolute Search">
+                            <form">
+                                <div>
+                                    <label for="Search" class="ms-5 mb-2 mt-3">Axtarış</label>
+                                    <input type="Search" class="form-control bc2" id="Search" placeholder="Daxil et"
+                                        name="Search">
+                                </div>
+                                </form>
+                        </div>
+
+
+                        <div class="position-absolute Ranking">
+                            <form class="mt-3 ms-5">
+                                <label for="sel1" class="form-label ms-5">Kategoriyanı seçin</label>
+                                <select class="form-select bc2" id="sel1" name="sellist1">
+                                    <option>A-Z</option>
+                                    <option>Z-A</option>
+                                    <option>Faiz Artan</option>
+                                    <option>Faiz Azalan</option>
+                                </select>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="card-casback">
+                <div class="row ">
+                    <div class="row d-flex">
+                        <div class="card mt-5 bc">
+                            <a href=""><img src="/img/noImageGifts.png" alt="gift" id="Uni"></i></a>
+                            <div class="card-body ">
+                                <h4 class="card-title">3%</h4>
+                                <p class="card-text ms-5 fw-bolder">
+                                    166 Cargo <br>
+                                    <small class="fw-light ms-4">Diger</small><br>
+                                    <small class="fw-light  mt-5"> POST Terminalda</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mt-5 mx-2 bc">
+                            <a href=""><img src="/img/Casback/6752-oysho.png " alt="oysho" id="oysho"></i></a>
+                            <div class="card-body ">
+                                <h4 class="card-title mt-3">5%</h4>
+                                <p class="card-text ms-5 fw-bolder">
+                                    Baku Carting <br>
+                                    <small class="fw-light ms-4">Diger</small><br>
+                                    <small class="fw-light  "> POST Terminalda</small>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card mt-5 bc">
+                            <a href=""><img src="/img/Casback/720-bershka.png" alt="gift" id="oysho"></i></a>
+                            <div class="card-body ">
+                                <h4 class="card-title mt-3">1%</h4>
+                                <p class="card-text ms-5 fw-bolder">
+                                    Diger Sebekeler <br>
+                                    <small class="fw-light ms-4">Diger</small><br>
+                                    <small class="fw-light  mt-4"> POST Terminalda</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mt-5 mx-2 bc">
+                            <a href=""><img src="/img/noImageGifts.png" alt="gift" id="Uni"></i></a>
+                            <div class="card-body ">
+                                <h4 class="card-title">3%</h4>
+                                <p class="card-text ms-5 fw-bolder">
+                                    166 Cargo <br>
+                                    <small class="fw-light ms-4">Diger</small><br>
+                                    <small class="fw-light  mt-4"> POST Terminalda</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mt-5 bc">
+                            <a href=""><img src="/img/Casback/9752-aldo.png" alt="gift" id="oysho"></i></a>
+                            <div class="card-body ">
+                                <h4 class="card-title mt-3">33%</h4>
+                                <p class="card-text ms-5 fw-bolder">
+                                    H20 Aldo <br>
+                                    <small class="fw-light ms-4">Diger</small><br>
+                                    <small class="fw-light  mt-4"> POST Terminalda</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="row d-flex">
+                        <div class="card mt-5 bc">
+                            <a href=""><img src="/img/Casback/imp-A68W2yWXa9EuTGZ5hckpcuVKkWd4mF.jpg" alt="gift"
+                                    id="oysho"></i></a>
+                            <div class="card-body ">
+                                <h4 class="card-title">3%</h4>
+                                <p class="card-text ms-4 fw-bolder">
+                                    Turkan Telecom <br>
+                                    <small class="fw-light ms-4">Diger</small><br>
+                                    <small class="fw-light  mt-5"> POST Terminalda</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mt-5 mx-2 bc">
+                            <a href=""><img src="/img/noImageGifts.png" alt="gift" id="Uni"></i></a>
+                            <div class="card-body ">
+                                <h4 class="card-title">3%</h4>
+                                <p class="card-text ms-5 fw-bolder">
+                                    Unibank Baku <br>
+                                    <small class="fw-light ms-4">Diger</small><br>
+                                    <small class="fw-light  "> POST Terminalda</small>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card mt-5 bc">
+                            <a href=""><img src="/img/Casback/imp-tvBwDTDGRRDA7KWmPjJzFTmBvu9DDB.jpg" alt="gift"
+                                    id="Uni"></i></a>
+                            <div class="card-body ">
+                                <h4 class="card-title">3%</h4>
+                                <p class="card-text ms-5 fw-bolder">
+                                    KIP Baku Steel <br>
+                                    <small class="fw-light ms-4">Diger</small><br>
+                                    <small class="fw-light  mt-4"> POST Terminalda</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mt-5 mx-2 bc">
+                            <a href=""><img src="/img/Casback/imp-wvbtAbd45xsD6rWqPeH7pZtYw4jBaA.jpg" alt="gift"
+                                    id="Uni"></i></a>
+                            <div class="card-body ">
+                                <h4 class="card-title mt-3">3%</h4>
+                                <p class="card-text ms-5 fw-bolder">
+                                    Diesel Baku <br>
+                                    <small class="fw-light ms-4">Diger</small><br>
+                                    <small class="fw-light  mt-4"> POST Terminalda</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mt-5 bc">
+                            <a href=""><img src="/img/o_1c17ao48r1ekc1tt3ru215jpamaa.png" alt="gift" id="Uni"></i></a>
+                            <div class="card-body ">
+                                <h4 class="card-title mt-3">3%</h4>
+                                <p class="card-text ms-5 fw-bolder">
+                                    TFR Steel <br>
+                                    <small class="fw-light ms-4">Diger</small><br>
+                                    <small class="fw-light  mt-4"> POST Terminalda</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <button type="button" class="btn " id="button-list">Tam siyahı</button>
+                    </div>
+
+                </div>
+            </div>
+            <section>
+                <div class="row">
+                    <div class="Additional-Infor mt-5 bc">
+                        <header>
+                            <h2 id="header" class="fw-bolder mt-5 ms-5">
+                                Əlavə məlumat
+                            </h2>
+                        </header>
+
+                        <div class="mt-5 ms-5">
+                            <button type="button" class="btn btn-outline-secondary me-5 ms-4 cl">Bütün filiallar</button>
+                            <button type="button" class="btn btn-outline-secondary mx-4 cl">Şənbə filialları</button>
+                        </div>
+                        <div class="my-5 ms-5">
+                            <b>
+                                5% keşbek qazanılacaq ticarət və xidmət kateqoriyaları: <br>
+                                • Dünyanın bütün marketlerində və onlayn marketlərdə - 5%;
+                            </b>
+                        </div>
+                        <div class="ms-5 me-5">
+                            <p>
+                                (Bunun üçün Unibankın Mastercard/Visa kartlarını Apple Pay / Google Pay™/ NFC / Garmin
+                                Pay-ə əlavə edib, smartfon və ya smart cihazlarla istənilən marketdə minimum 10 AZN
+                                dəyərində ödəniş etmək lazımdır. Belə ödənişlər üzrə bir dəfəyə maksimum 10 AZN, ay
+                                arzində maksimum 20 AZN keşbek qazanıla bilər);
+                            </p>
+                        </div>
+                        <div class="ms-5">
+                            <p>
+                                • Dünyanın istənilən yanacaqdoldurma məntəqələrində - 5 % (ay ərzində maksimum 20
+                                AZN);<br>
+                                • Dünyanın istənilən kafe və restoranlarında – 5% (həmçinin bu məkanlarda edilən onlayn
+                                sifarişlərə də aiddir).
+                            </p>
+                        </div>
+                        <div class="ms-5 my-5">
+                            <p>
+                                *Qeyd: 2 və 3 bəndlər üzrə qeyd olunan keşbek aylıq nağdsız 200 AZN dövriyyədən sonra
+                                aktivləşir.
+                            </p>
+                        </div>
+                        <div class="mb-4 ms-5">
+                            <b>
+                                Dövriyyə tələbi olmadan yüksək keşbek qazanılacaq ticarət və xidmət kateqoriyaları:
+                            </b>
+                        </div>
+                        <div class="ms-5 mb-5">
+                            <p>
+                                • Dünyanın istənilən yanacaqdoldurma məntəqələrində - 3%; <br>
+                                • Dünyanın istənilən kafe və restoranlarında (bu məkanlarda edilən onlayn sifarişlərələ
+                                də aiddir) – 3%;<br>
+                                • Partnyorlardan 30%-dək;<br>
+                                • Digər qeyri-partnyorlardan 1%.
+                            </p>
+                        </div>
+
+                        <div class="ms-5 mb-5">
+                            <b>
+                                Qeydlər:
+                            </b>
+                        </div>
+                        <div class="ms-5 me-5">
+                            <p>
+                                • Qeyd olunan keşbek yalnız bu kartlara şamil olunur: UCard (Visa/Master Card),
+                                Mastercard Black Edition (keşbek), Visa Platinum, Visa İnfinity, Albalı Mastercard World
+                                və Albalı Visa Rewards. <br>
+                                • Digər kartlarımız üzrə nağdsız əməliyyat zamanı 0.1% (standart kartlar) həcmində
+                                keşbek hesablanır. <br>
+                                • Dünyanın bütün marketlərində, yanacaqdoldurma məntəqələrində, kafe, restoranlar və
+                                digər partnyorlar üzrə ay ərzində qazanıla biləcək maksimal keşbek məbləği – 70 AZN. (20
+                                AZN - Apple Pay / Google Pay™/ NFC / Garmin Pay ilə bütün marketlərdə, 50 AZN – digər)
+                                <br>
+                                • 5%-dən yüksək keşbek təqdim edən restoran və yanacaqdoldurma partnyor şəbəkələrində
+                                aylıq maksimal məbləğ təyin olunmayıb (istədiyin qədər qazan). <br>
+                                • Digər kateqoriyalar üzrə bütün partnyor şəbəkələrində qazanılacaq keşbek məbləğinə
+                                aylıq maksimal məbləğ təyin olunmayıb (istədiyin qədər qazan). <br>
+                                • Yalnız çıxarışda əks olunan və şərtlərə uyğun ödənişlərin KEŞBEKLƏRİ hesaba əlavə
+                                olunur. Ödənişlər çıxarışda bir neçə gün ərzində əks oluna bilər. <br>
+                                • Kafe-restoranlarda, yanacaqdoldurma məntəqələrində və marketlərdə müştərinin qazana
+                                biləcəyi maksimal məbləğ, onun ödəniş etdiyi bütün aktiv kartları üzrə toplam olaraq
+                                nəzərə alınır. <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="Calculator mt-5 mb-5 bc">
+                        <header class="mt-5 ms-5">
+                            <h2 class="text-calculator fw-bolder">Kalkulyator</h2>
+                        </header>
+                        <div>
+                            <div class="position-absolute">
+                                <form class="mt-3 ms-5">
+                                    <label for="sel1" class="form-label ms-5">Kategoriyanı seçin</label>
+                                    <select class="form-select bc2" id="sel1" name="sellist1">
+                                        <option>- Bütün -</option>
+                                        <option>Aksessuarlar</option>
+                                        <option>Avto</option>
+                                        <option>Ayaqqabı mağazaları</option>
+                                        <option>Digər</option>
+                                        <option>Gül salonları</option>
+                                        <option>İstirahət və Əyləncə</option>
+                                        <option>Kosmetika</option>
+                                        <option>Mebel</option>
+                                        <option>Parfümeriya</option>
+                                        <option>Restoran</option>
+                                        <option>Supermarketlər</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="position-absolute Partnyor" id="Partnyor">
+                                <form class="mt-3 ms-5">
+                                    <label for="sel1" class="form-label ms-5">Partnyoru seçin</label>
+                                    <select class="form-select bc2" id="sel1" name="sellist1">
+                                        <option>- Seçin -</option>
+                                        <option>Aksessuarlar</option>
+                                        <option>Avto</option>
+                                        <option>Ayaqqabı mağazaları</option>
+                                        <option>Digər</option>
+                                        <option>Gül salonları</option>
+                                        <option>İstirahət və Əyləncə</option>
+                                        <option>Kosmetika</option>
+                                        <option>Mebel</option>
+                                        <option>Parfümeriya</option>
+                                        <option>Restoran</option>
+                                        <option>Supermarketlər</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div id="form-control-lg">
+                                <form class=" ">
+                                    <label for="sel1" class="form-label ms-3 mt-3">Məbləği daxil edin</label>
+                                    <input type="text" class="form-control form-control-lg mt-1 bc2" placeholder="0">
+                                </form>
+                            </div>
+                            <div id="cal-kesback">
+                                <p>
+                                    <b>Hesablanmış keşbek</b>
+                                </p>
+                            </div>
+                            <div class="zero fw-bolder">
+                                <p>
+                                    0
+                                </p>
+                            </div>
+                            <div class="Azn">
+                                <p>AZN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <section class="position-relative">
+                    <div class="position-absolute mt-5 ms-5">
+                        <div>
+                            <a href="#" class="footer-container"><b>Kartlar</b></a>
+                        </div>
+
+                        <div class="my-3">
+                            <a href="#" class="footer-container">Kartlar</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container">Debet kartlar</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container">Digər</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-2"><b>Kreditlər</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-2">Nağd</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-2">Mikro</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-2">İpoteka</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-3"><b>Əmanətlər</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-3">Müddətli</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-3">Proqressiv</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-3">Yığım</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-3">Faizlər əvvəlcədən</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-3">Topla</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-4"><b>Köçürmələr</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-4">Ölkəxarici</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-4">Ölkədaxili</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-5"><b>Rəqəmsal bankçılıq</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-5">UBank</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">İnternet bankçılıq</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">Şəxsi kabinet</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">Unimiles şəxsi kabinet</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-5">Onlayn kredit ödənişi</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-5">Onlayn kredit müraciəti</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-6"><b>Əlavə xidmətlər</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-6">Hesablaşma-kassa xidməti</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-6">POS terminal / Smart kassa</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-6">Depozit qutuları</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-6">Onlayn ticarət (eCommerce)</a>
+                        </div>
+                    </div>
+
+                    <div class="position-absolute mt-5">
+                        <div>
+                            <a href="#" class="footer-container-7"><b>Bank haqqında</b></a>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="footer-container-7">Rəhbərlik</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">Müxbir hesablar</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">Təklif və Şikayətlər</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">İnsan resursları</a>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="footer-container-7">Hesabatlar</a>
+                        </div>
+                        <div>
+                            <a href="#" class="footer-container-7">Digər sənədlər</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="social-icone ms-5 ">
+                    <a href="#" class="aqz"><i class="bi bi-apple icone1 "></i></a>
+                    <a href="#"><i class="bi bi-android2 icone2 mx-2"></i></a>
+                    <a href="#"><i class="bi bi-facebook icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-twitter icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-linkedin icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-youtube icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-instagram icone me-2"></i></a>
+                    <a href="#"><i class="bi bi-telegram icone"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="position-relative">
+                    <div class="d-inline-flex">
+                        <p class="d-inline-flex">© 2022, Unibank - Sənin Bankın</p>
+                    </div><br>
+                    <div class="d-inline-flex">
+                        <small class="d-inline-flex"> Bütün hüquqlar qorunur.</small>
+                    </div>
+                    <div class="footer-partners position-absolute">
+                        <a href="#"><img src="/img/adif.png" alt="adif" id="adif"></a>
+                        <a class="mx-4" href="#"><img src="/img/infobank.png" alt="adif" id="adif"></a>
+                        <a href="#"><img src="/img/msp.png" alt="adif" id="adif"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
